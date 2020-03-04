@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+        <meta charset="utf-8"></meta>
+		<title>Space Shooter</title>
+        <style>
+            body {
+                background-color: #616161;
+                background-image: url("images/space_wallpaper.jpg");
+            }
+            canvas {
+                border: 1px solid blue;
+                margin: 0 auto;
+                display: block;
+                background-image:
+                    /*url(https://www.esa.int/extension/pillars/design/pillars/images/nebula.jpg);*/
+                    url("images/space_450x500.png");
+                border-radius: 20px;
+            }
+            img {
+                display: none;
+            }
+        </style>
+        <img src="images/arrow_keys_90x80.png" id="arrow_keys" width=90 height=80>
+        <img src="images/z_key_45x50.png" id="z_key" width=45 height=50>
+        <img src="images/bomb_45x50.png" id="x_key" width=45 height=50>
+        <img src="images/ship_34x37.png" id="ship" width=34 height=37>
+        <img src="images/enemy_22x23.png" id="enemy" width=22 height=23>
+        <img src="images/replay_45x50.png" id="replay_key" width=45 height=50>
+        <img src="images/explosion.png" id="explosion" width=256 height=256>
+        <img src="images/bomb_powerup_100x100.png" id="bomb_powerup" width=100 height=100>
+        <img src="images/speed_powerup_100x100.png" id="speed_powerup" width=100 height=100>
+	</head>
+    <body>
+        <img style="display:block;margin-left:auto;margin-right:auto"
+             src="images/logo.png">
+		<div id="game_wrapper">
+			<canvas id="game_canvas" width=450px height=500px></canvas>
+			<span id="game_state"></span>
+		</div>
+        <p id="High Score"></p>
+	</body>
+    <script src="GameManager.js"></script>
+    <script src="Powerup.js"></script>
+    <script src="Particles.js"></script>
+    <script src="Animation.js"></script>
+    <script src="Config.js"></script>
+    <script src="InputHandler.js"></script>
+    <script src="Laser.js"></script>
+    <script src="Entity.js"></script>
+    <script src="Player.js"></script>
+    <script src="EnemySpawner.js"></script>
+    <script src="Enemy.js"></script>
+    <script src="index.js"></script>
+</html>
